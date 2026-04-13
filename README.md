@@ -1,4 +1,4 @@
-CIMmetry-1616 is a custom-designed, highly optimized edge hardware accelerator bridging the gap between high-level Machine Learning architectures and bare-metal silicon software and RTL design. Designed specifically for low-latency Edge AI, this project implements a hardware-software co-design paradigm to execute edge Convolutional Neural Network (CNN) inference as well as primitive transformers architecture operations natively on an FPGA.
+CIMmetry-1616 is a custom-designed, highly optimized edge hardware accelerator bridging the gap between high-level Machine Learning architectures and bare-metal silicon software and RTL design. Designed specifically for low-latency Edge AI, this project implements a hardware-software co-design paradigm to execute edge Convolutional Neural Network (CNN) inference as well as primitive transformers architecture operations natively on an Altera DE2-115 FPGA.
 
 By utilizing a custom Compute-In-Memory and Systolic Array architecture, CIMmetry-1616 drastically reduces memory bottlenecks, optimizing the Multiply-Accumulate (MAC) operations required for tasks like real-time facial recognition.
 
