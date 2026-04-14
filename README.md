@@ -20,4 +20,4 @@ The project is split into two primary domains: the **RTL Hardware Logic** and th
 
 ### 3. The Models 
 * **Siamese Network (CNN):** A custom 128 parameters edge facial-recognition model. Trained via contrastive loss and 50 data for the 2 face classes.
-* **Rectified Flow-Matching (Diffusion Transformer DiT):** Due to scarce data obtained (4 per classes), 2 separate flow-matching model are engineered to generate 46 more varied data for the 2 face classes respectively.
+* **Rectified Flow-Matching (Diffusion Transformer DiT):** Due to scarce data obtained (4 per classes), 2 separate flow-matching model are engineered to generate 46 more varied data for the 2 face classes respectively. The 4 images in the Data folder are all generated via the DiT.
