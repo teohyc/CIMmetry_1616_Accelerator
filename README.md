@@ -16,4 +16,8 @@ The project is split into two primary domains: the **RTL Hardware Logic** and th
 ### 2. Software (The C-Bridge)
 * **Low-Level Memory Addressing:** Custom Embedded C drivers that control the hardware routing and memory bandwidth management.
 * **Inference Pipeline:** The host software processes the raw image tensors, flattens them, and dispatches the memory-mapped instructions to the FPGA fabric for accelerated computation.
-* **PyTorch-like Usage:** The C code provides custom custom data structure for the matrices to be multiplied and the product of multiplication as well as a wrapper function that only takes in two tensor matrices as arguments so that users can use it easily without the hassle of memory map addressing.
+* **PyTorch-like Usage:** The C code provides custom data structure for the matrices to be multiplied and the product of multiplication as well as a wrapper function that only takes in two tensor matrices as arguments so that users can use it easily without the hassle of memory map addressing.
+
+### 3. The Models 
+* **Siamese Network (CNN):** A custom 128 parameters edge facial-recognition model. Trained via contrastive loss and 50 data for the 2 face classes.
+* **Rectified Flow-Matching (Diffusion Transformer DiT):** Due to scarce data obtained (4 per classes), 2 separate flow-matching model are engineered to generate 46 more varied data for the 2 face classes respectively.
