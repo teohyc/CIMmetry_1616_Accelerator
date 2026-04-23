@@ -23,5 +23,7 @@ The project is split into two primary domains: the **RTL Hardware Logic** and th
 
 ### 3. The Models 
 * **Alex vs Steve Siamese Network (CNN):** A custom 128 parameters TinyML edge facial-recognition model. Work to classify 8x8 image of Minecraft Steve and Alex as well as noise. Quantization-Aware-Trained (int8) via contrastive loss and 50 data for the 2 face classes.
-* **Olivetti Faces Siamese Network (CNN_2):** A custom 384 parameters TinyML edge facia-recognition model. Trained with 40 different faces from Olivetti Face Dataset from sklearn library image size of 32x32. Ability to identify the identity of different individuals. Demonstartion done uses 2 of 3 different individual's faces, all are classifiedd correctly. 
+* **Olivetti Faces Siamese Network (CNN_2):** A custom 384 parameters TinyML edge facia-recognition model. Trained with 40 different faces from Olivetti Face Dataset from sklearn library image size of 32x32. Ability to identify the identity of different individuals. QAT trained.
+
+### 4. Miscellaneous
 * **Rectified Flow-Matching for Alex vs Steve Siamese Network (Diffusion Transformer DiT):** Due to scarce data obtained (4 per classes), 2 separate flow-matching model are engineered to generate 46 more varied data for the 2 face classes respectively. The 4 images in the Data folder are all generated via the DiT.
